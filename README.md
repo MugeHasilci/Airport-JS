@@ -1,5 +1,48 @@
 # Airport-JS
 
+## Summary
+
+A project to learn Javascript by re-doing a previous weekend challenge which was originally written in Ruby - the Airport Challenge.</br>
+[Full instructions here.](https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md)
+___
+
+## Technical
+
+### Tech/Frameworks Used
+
+Javascript, Jasmine
+
+**All tests passing**
+
+### Using the Application
+
+#### Clone the repo and launch:
+
+```
+$ git clone https://github.com/MugeHasilci/Airport-JS
+$ cd Airport JS
+$ open SpecRunner.html
+```
+
+#### Example usage:
+
+In the browser console (right click > inspect > console)
+
+```
+# create a new airport with capacity for 10 airplanes
+> airport = new Airport(10);
+
+# create a plane
+> plane = new Plane();
+
+# land a plane
+> airport.land(plane)
+
+# release a plane
+> airport.takeOff(plane)
+```
+___
+
 ## User Stories
 
 ```
@@ -27,8 +70,3 @@ As the system designer
 So that the software can be used for many different airports
 I would like a default airport capacity that can be overridden as appropriate
 ```
-## Technical
-
-### Tech/Frameworks Used
-
-Javascript, Jasmine
