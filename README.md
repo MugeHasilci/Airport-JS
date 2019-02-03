@@ -3,7 +3,7 @@
 ## Summary
 
 A project to learn Javascript by re-doing a previous weekend challenge which was originally written in Ruby - the Airport Challenge.</br>
-[Full instructions here.](https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md)
+[Full instructions here.](https://github.com/makersacademy/course/blob/master/thermostat/airport_challenge_js.md)
 ___
 
 ## Technical
