@@ -1,20 +1,21 @@
-'use strict';
-
-function Airport(){
+function Airport(capacity) {
   this.planes = [];
+  this.capacity = capacity;
 }
 
-Airport.prototype.land = function(plane) {
+Airport.prototype.land = function(object) {
   if (this._isStormy()) {
-    throw new Error('Weather is too stormy to land');
+    throw new Error('Too stormy to land');
+  } else if (this._isFull()) {
+    throw new Error('Airport is full')
   } else {
-  this.planes.push(plane);
-}
+    this.planes.push(object);
+  }
 };
 
 Airport.prototype.takeOff = function() {
   if (this._isStormy()) {
-    throw new Error('Weather is too stormy to take off');
+    throw new Error('Too stormy to take off');
   } else {
     this.planes.pop();
   }
@@ -22,4 +23,8 @@ Airport.prototype.takeOff = function() {
 
 Airport.prototype._isStormy = function() {
   (Math.random(1) < 0.5);
+};
+
+Airport.prototype._isFull = function() {
+  return this.planes.length >= this.capacity;
 };
